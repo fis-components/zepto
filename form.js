@@ -5,7 +5,7 @@ var Zepto = require('./zepto.js');
 
 ;(function($){
   $.fn.serializeArray = function() {
-    var el, name, type, result = [],
+    var name, type, result = [],
       add = function(value) {
         if (value.forEach) return value.forEach(add)
         result.push({ name: name, value: value })
